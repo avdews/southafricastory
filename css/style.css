@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css?family=Slabo+27px&display=swap');
+
+* {
+	font-family: 'Slabo 27px', serif;
+}
+
+.box1 {
+	grid-area: box1;
+}
+
+.box1 img {
+	width: 100%;
+}
+
+.header {
+	position: relative;
+}
+
+.box1 h1, .box1 h4, .box1 h5 {
+	margin: 12px;
+} 
+
+.box2 {
+	grid-area: box2;
+}
+
+.box3 {
+	grid-area: box3;
+}
+
+.caption {
+	font-size: smaller;
+}
+
+.box3 img {
+	width: 100%;
+}
+
+.box4 {
+	grid-area: box4;
+	/*background-color: blue;*/
+}
+
+.box5 {
+	grid-area: box5;
+}
+
+.box6 {
+	grid-area: box6;
+}
+
+.box6 img {
+	width: 100%;
+}
+
+.box7 {
+	grid-area: box7;
+	/*background-color: blue;*/
+}
+
+.left {
+  position: absolute;
+  bottom: 10%;
+  left: 5%;
+}
+
+#headline {
+	height: 38%;
+	width: 50%;
+	background-color: black;
+	transform: translate( -5%, -5% );
+	color: white;
+	font-weight: bold;
+	font-size: large;
+}
+
+.grid {
+	display: grid;
+	grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: 1.5fr;
+	grid-template-areas:
+	"box1	box1	box1	box1	box1	box1	box1	box1	box1	box1"
+	"box1	box1	box1	box1	box1	box1	box1	box1	box1	box1"
+	"box1	box1	box1	box1	box1	box1	box1	box1	box1	box1"
+	"box1	box1	box1	box1	box1	box1	box1	box1	box1	box1"
+	".		.		.		.		.		.		.		.		.		.	"
+	".		.		box2	box2 	box2	box2	box2 	box2	.		.	"
+	".		.		box2	box2 	box2	box2	box2 	box2	.		.	"
+	".		.		box2	box2 	box2	box2	box2 	box2	.		.	"
+	".		.		box2	box2 	box2	box2	box2 	box2	.		.	"
+	".		.		.		.		.		.		.		.		.		.	"
+	".		.		box3	box3	box3	box3 	box3	box3	.		.	"
+	".		.		box3	box3	box3	box3 	box3	box3	.		.	"
+	".		.		.		.		.		.		.		.		.		.	"
+	".		.		box4	box4 	box4	box4	box4 	box4	.		.	"
+	".		.		box4	box4 	box4	box4	box4 	box4	.		.	"
+	".		.		box4	box4 	box4	box4	box4 	box4	.		.	"
+	".		.		box4	box4 	box4	box4	box4 	box4	.		.	"
+	".		.		.		.		.		.		.		.		.		.	"	
+	".		.		box6	box6	box6	box6 	box6	box6	.		.	"
+	".		.		box6	box6	box6	box6 	box6	box6	.		.	"
+	".		.		.		.		.		.		.		.		.		.	"
+	".		.		box7	box7 	box7	box7	box7	box7 	.		.	"
+	".		.		box7	box7 	box7	box7	box7	box7 	.		.	"
+	".		.		box7	box7 	box7	box7	box7	box7 	.		.	"
+	".		.		box7	box7 	box7	box7	box7	box7 	.		.	"
+	".		box5	box5	box5	box5	box5	box5	box5	box5	.	";
+	background: #ededed;
+}
+
+@media (max-width: 950px) {
+	.box1 h1, .box1 h4, .box1 h5 {
+		margin: 7px;
+	}
+}
+
+@media (max-width: 768px) {
+	p {
+		font-size: smaller;
+	}
+
+	.box1 img {
+		max-width: 767px;
+	}
+
+	.left {
+		bottom: 10px;
+		left: 20px;
+	}
+
+	#headline {
+		height: 36%;
+	}
+
+	.box1 h1, .box1 h4, .box1 h5 {
+		margin: 4px;
+	}
+
+	.box1 h4, .box1 h5 {
+		font-size: medium;
+	}
+
+	.caption {
+		font-size: x-small;
+	}
+
+	.grid {
+		display: grid;
+		grid-template-columns: repeat(10, 1fr);
+		grid-template-rows: 1.5fr;
+		grid-template-areas:
+		"box1	box1	box1	box1	box1	box1	box1	box1	box1	box1"
+		"box1	box1	box1	box1	box1	box1	box1	box1	box1	box1"
+		"box1	box1	box1	box1	box1	box1	box1	box1	box1	box1"
+		"box1	box1	box1	box1	box1	box1	box1	box1	box1	box1"
+		".		.		.		.		.		.		.		.		.		.	"
+		".		.		box2	box2 	box2	box2	box2 	box2	.		.	"
+		".		.		box2	box2 	box2	box2	box2 	box2	.		.	"
+		".		.		box2	box2 	box2	box2	box2 	box2	.		.	"
+		".		.		box2	box2 	box2	box2	box2 	box2	.		.	"
+		".		.		.		.		.		.		.		.		.		.	"
+		".		.		.		box3	box3	box3 	box3	.		.		.	"
+		".		.		.		box3	box3	box3 	box3	.		.		.	"
+		".		.		.		.		.		.		.		.		.		.	"
+		".		.		box4	box4 	box4	box4	box4 	box4	.		.	"
+		".		.		box4	box4 	box4	box4	box4 	box4	.		.	"
+		".		.		box4	box4 	box4	box4	box4 	box4	.		.	"
+		".		.		box4	box4 	box4	box4	box4 	box4	.		.	"
+		".		.		.		.		.		.		.		.		.		.	"	
+		".		.		.		box6	box6	box6 	box6	.		.		.	"
+		".		.		.		box6	box6	box6 	box6	.		.		.	"
+		".		.		.		.		.		.		.		.		.		.	"
+		".		.		box7	box7 	box7	box7	box7	box7 	.		.	"
+		".		.		box7	box7 	box7	box7	box7	box7 	.		.	"
+		".		.		box7	box7 	box7	box7	box7	box7 	.		.	"
+		".		.		box7	box7 	box7	box7	box7	box7 	.		.	"
+		"box5	box5	box5	box5	box5	box5	box5	box5	box5	box5";
+		background: #ededed;
+	}
+}
+
+@media (max-width: 642px) {
+
+}
+
+@media (max-width: 425px) {
+	.box1 h1, .box1 h4, .box1 h5 {
+		font-size: xx-small;
+		margin: 2px;
+	} 
+}
+
+@media (max-width: 320px) {
+	#headline {
+		height: 40%;
+	}
+
+	.box1 h1, .box1 h4, .box1 h5 {
+		font-size: xx-small;
+		margin: 1px;
+	} 
+}
